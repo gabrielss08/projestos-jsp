@@ -1,0 +1,682 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 21 de out. de 2023, 19:19:08
+    Author     : particular
+*/
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container-app{
+    border: black 5px solid;
+    width: 480px;
+    max-width: 480px;
+    height: 720px;
+    border-radius: 4rem;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-app-menu{
+    border: black 5px solid;
+    width: 480px;
+    max-width: 480px;
+    height: 720px;
+    border-radius: 4rem;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.ïmgLogo{
+    height: 100%;
+    width:70%;
+}
+
+.containerLogo{
+    height: 45%;
+    width: 100%;
+    overflow: hiden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerLogin{
+    background-color: #9dd549;
+    height: 55%;
+    width: 100%;
+    border-radius: 4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.tituloLogin{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-style: italic;
+
+
+}
+
+.divCadastro{
+    display: flex;
+    flex-direction: column;
+    margin:65px;
+}
+
+.labelLogin {
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-right: 10px;
+
+}
+.labelSenha{
+    color: #FFFFFF;
+    margin-right: 8px;
+    font-weight: 500;
+}
+
+.divBoxLogin{
+    margin-top: 30px;
+}
+
+.divBoxSenha{
+    margin-top: 10px;
+}
+
+.btnLogin{
+    margin-top: 20px;
+    border-radius: 2rem;
+    width: 200px;
+    height: 30px;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+    border: 2px solid green;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+.btnLogin:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: #FFFFFF80;
+    color: #9dd549;
+}
+
+.linkSenha{
+    margin-top: 20px;
+    text-transform: none;
+    color: #FEFEFC;
+    text-decoration: none;
+}
+.linkCadastre{
+    text-transform: none;
+    color: #FEFEFC;
+    text-decoration: none;
+}
+
+.txtLogin{
+    border-radius: 2rem;
+    height: 25px;
+    opacity: 0.5;
+    border: 2px solid green;
+    width: 150px;
+    padding-left: 10px;
+}
+
+.txtSenha{
+    border-radius: 2rem;
+    height: 25px;
+    opacity: 0.5;
+    width: 150px;
+    padding-left: 10px;
+    border: 2px solid green;
+}
+
+.linkCadastre:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.linkSenha:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.txtSenha:focus{
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.txtLogin:focus{
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.header{
+    height: 60px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.spanHello {
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.spanUsuario{
+    color:#68984D;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+.spanApresentacao{
+    color:#a9a9a9;
+    letter-spacing: 1px;
+}
+
+.subHeaderApresentacao{
+    margin-top: 5px;
+}
+
+.containerHeader{
+    display: flex;
+    flex-direction: column;
+}
+
+.spanNotification{
+}
+
+.divNotification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9dd549;
+    width: 55px;
+    height:55px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.divNotification:hover, .spanNotification:hover{
+    background-color: #68984D;
+    color:#FEFEFC;
+    transition: .7s;
+    cursor: pointer;
+}
+
+
+.containerMission{
+    height: 180px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.tituloMissao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mission{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color:#a9a9a9;
+}
+
+.missionShowMore{
+    color:#a9a9a9;
+    cursor: pointer;
+}
+
+.missionShowMore:hover{
+    transition: .7s;
+    color:#68984D;
+    font-weight: bold;
+}
+
+.divMissao {
+    width: 100%;
+    height: 155px;
+    display: flex;
+    flex-direction: row;
+    background-color: #9dd549;
+    border-radius: 1rem;
+}
+
+.divMissaoLeft{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    justify-content: space-around;
+
+}
+
+.missaoText1{
+    color: #FFFFFF;
+    font-style: italic;
+    letter-spacing: 3px;
+    font-weight: 900;
+}
+
+.missaoText2{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.missaoText3{
+    background-color: #FEFEFC;
+    width: 140px;
+    text-align: center;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 1rem;
+    color: #68984D;
+    cursor:pointer;
+
+}
+
+.missaoText3:hover{
+    background-color: #68984D;
+    color:#FEFEFC;
+    transition: .7s;
+}
+
+
+.divMissaoRight{
+    width: 45%;
+}
+
+.imgMission{
+    height: 100%;
+    width: 100%;
+}
+
+.containerComponents{
+    width: 90%;
+    margin-top: 10px;
+    height: 320px;
+}
+
+.divMenu{
+    height:75px;
+    width: 100%;
+    background-color: #9dd549;
+    margin-top: 10px;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btnMenu{
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.btnMenu:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.spanImgBtn{
+    height: 40px;
+}
+
+.imgBtn{
+    height:40px;
+    width: 90%;
+}
+
+.nameBtn{
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-top: 3px;
+}
+
+.componente{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.spanHistorico{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color:#a9a9a9;
+}
+
+.componente{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c8e5b8;
+    margin-top: 5px;
+
+}
+
+.spanImg{
+    height: 65px;
+    width: 70px;
+    margin-left: 15px;
+}
+
+.imgComponente{
+    width: 70px;
+    height: 65px;
+}
+
+.containerComponentText{
+    height: 70px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.divPontos{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9dd549;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.pontosComponente{
+    text-align: center;
+    font-size: 12px;
+    color:#68984D;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.txtDataComponente{
+    color:#68984D;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.txtItensComponente{
+    margin-bottom: 5px;
+    color:#68984D;
+    font-weight: bold;
+}
+
+.containerItens{
+    width: 90%;
+    margin-top: 10px;
+    height: 530px;
+}
+
+.componenteItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c8e5b8;
+    margin-top: 5px;
+}
+
+.containerItemQuantidade{
+    height: 70px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.addItem{
+    height: 70px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spanAdd{
+    height: 50px;
+    width: 15px;
+}
+
+.spanRemove{
+    height: 50px;
+    width: 15px;
+}
+
+.spanContador{
+    width: 70px;
+    height: 40px;
+    padding-top: 10px;
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #68984D;
+    font-weight: bold;
+}
+
+.imgAddItem{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.imgAddItem:hover{
+    transition: .7s;
+    transform: scale(1.1);
+}
+
+.imgRemoveItem{
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+}
+
+.imgRemoveItem:hover{
+    transition: .7s;
+    transform: scale(1.1);
+}
+
+.btnCadastrar{
+
+    width: 200px;
+    height: 35px;
+    border-radius: 1rem;
+    background-color: #9DD549;
+    color: #FFFFFF;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+}
+
+.btnCadastrar:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    background-color: #FFFFFF80;
+    color: #9dd549;
+    border: #9DD549 2px solid;
+
+}
+
+.formAdicionar{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.divTotalPontos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9dd549;
+    width: 70px;
+    height:70px;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.containerTotalPontos{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.spanTotalPontos{
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.inputCadastro{
+    border-radius: 2rem;
+    height: 35px;
+    opacity: 0.5;
+    border: 2px solid green;
+    width: 220px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.btnInputCadastro{
+    width: 200px;
+    height: 35px;
+    border-radius: 1rem;
+    background-color: #9DD549;
+    color: #FFFFFF;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    margin-top: 30px;
+    
+}
+
+.btnInputCadastro:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    background-color: #FFFFFF80;
+    color: #9dd549;
+    border: #9DD549 2px solid;
+}
+
+.containerForm{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  
+    justify-content: center;
+}
+
+.tituloCadastro{
+    margin-bottom: 20px;
+    color:#a9a9a9;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.formCadastrar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .containerImgs{
+     margin-top: 50px;
+     display: flex;
+     flex-direction: row;
+     width: 90%;
+     height: 150px;
+     
+     justify-content: space-between;
+ }
+ 
+ .imgsContainer{
+     height: 150px;
+     border: 4px solid #9DD549;
+     background-color:#9DD549;
+    
+ }
+ 
+ .imgCadastro{
+     height: 150px;
+     width: 130px;
+ }
+ 
+ .btnVoltar{
+    width: 200px;
+    height: 35px;
+    border-radius: 1rem;
+    background-color: #9DD549;
+    color: #FFFFFF;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 5px; 
+    
+}
+
+.btnVoltar:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    background-color: #FFFFFF80;
+    color: #9dd549;
+    border: #9DD549 2px solid;
+}
+ 
